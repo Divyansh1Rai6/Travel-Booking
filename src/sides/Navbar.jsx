@@ -19,7 +19,7 @@ const Navbar = () => {
           </nav>
           <button onClick={() => {setmobileOpen(!mobileOpen)}} className='md:hidden text-gray-700 hover:text-blue-600 transition-colors'>{mobileOpen ? <X className='w-6 h-6'/> : <Menu className='w-6 h-6'/>}</button>
         </div>
-        <nav className={`md:hidden flex flex-col gap-4 w-auto border-t backdrop-blur-sm border-gray-300 transition-all duration-300 ease-in-out overflow-hidden ${mobileOpen ? 'max-h-64 py-4 opacity-100' : 'max-h-0 py-0 opacity-0'}`}>
+        <nav className={`md:hidden flex flex-col gap-5 w-auto border-t backdrop-blur-sm border-gray-300 transition-all duration-300 ease-in-out overflow-hidden ${mobileOpen ? 'max-h-64 py-4 opacity-100' : 'max-h-0 py-0 opacity-0'}`}>
           <Link to='/' className='flex items-center gap-2 text-gray-700 hover:text-blue-600 transition-colors'><Home className='w-4 h-4'/>Home</Link>
           <Link to='/dest' className='flex items-center gap-2 text-gray-700 hover:text-blue-600 transition-colors'><Compass className='w-4 h-4'/>Destinations</Link>
           <Link to='/book' className='flex items-center gap-2 text-gray-700 hover:text-blue-600 transition-colors'><Calendar className='w-4 h-4'/>Book Trip</Link>

@@ -34,7 +34,6 @@ const BookTrip = ({selectedPackage, onSuccess, onCancel}) => {
         message: '',
         destination: '',
       });
-      setShowSuccess(false)
     }, 3000)
   }
 
